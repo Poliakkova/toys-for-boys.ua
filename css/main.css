@@ -1,0 +1,271 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 1070px;
+	/*позиционирование по центру*/
+	margin: 0 auto; 
+	text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+	background: url('../img/background1.jpg') no-repeat center top / cover; /*растянуть фон*/
+	padding-top: 29px;
+	color: #FFE6A6; 
+	padding-bottom: 126px;
+}
+
+.block2{
+	background: url('../img/background2.jpg')no-repeat center top / cover;
+	padding-top: 110px;
+	padding-bottom: 110px;
+	height: 227px;
+}
+
+.block3{
+	background: url('../img/background3.jpg')no-repeat center top / cover;
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+.block4 {
+	background: url('../img/background4.jpg')no-repeat center top / cover;
+	padding-top: 110px;
+	padding-bottom: 110px;
+}
+
+.footer{
+	background-color: #280003;
+	padding-top: 35px;
+	padding-bottom: 25px;
+
+}
+
+.logo{
+	margin-right: 296px;
+}
+
+.menu, .menu2{
+	display: flex;
+	margin-left: auto;
+}
+
+.menu li a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #FFE6A6; 
+	display: inline-block;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu li a:after, .menu2 li a:after {
+	margin-top: 10px;
+	display: block;
+    content: "";
+    background-color: #FFE6A6;
+    opacity: .3;
+    height: 1px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.menu li a:hover:after,
+.menu li a:focus:after,
+.menu2 li a:hover:after,
+.menu2 li a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.menu li{
+	margin-left: 60px;
+}
+
+.omag1{
+	width: 109px;
+}
+
+.nav{
+	display: flex; 
+	align-items: center; /*меню в одну строку*/
+}
+
+.offer {
+	margin-top: 117px;
+	width: 600px;
+	height: 407px;
+}
+
+.offer h1{
+	font-size: 48px;
+	font-weight: 900;
+	text-shadow: 7px 7px 13px rgba(0, 0, 0, 0.5);
+}
+
+.offer p{
+	font-size: 24px;
+	text-shadow: 7px 7px 13px rgba(0, 0, 0, 0.5);
+}
+
+.insta {
+    position: fixed; /* Фиксированное положение */
+    right: 175px; /* Расстояние от правого края окна браузера */
+    top: 790px; /* Расстояние сверху */
+    padding: 10px; /* Поля вокруг текста */ 
+   }
+
+.insta img {
+  position:absolute; /* абсолютное позиционирование*/
+  left: 0; /* выравниваем картинки по левому верхнему углу div-а*/
+  top: 0; /* выравниваем картинки по левому верхнему углу div-а */  
+}
+
+.insta img.insta-button2 { /* 2 картинка полностью прозрачная */
+  opacity:0;
+  filter:alpha (opacity=0);
+}
+
+.insta:hover img.insta-button2 { /* при наведении курсора 2 картинка становится не прозрачной */
+  opacity:1;
+  filter:alpha (opacity=100);
+
+}
+
+.insta:hover img.insta-button, .insta img.insta-button:hover { /* а 1 при наведении курсора становится прозрачной */
+  opacity:0;
+  filter:alpha (opacity=0);
+
+}
+
+.btn{
+	margin-top: 67px;
+}
+
+.btn a, .btn2 a{
+	text-decoration: none;
+	color: black;
+	font-weight: 900;
+	font-size: 24px;
+	background: linear-gradient(102.56deg, #FCB600 32.88%, #E2A402 65.54%);
+	padding: 18px 50px;
+	border-radius: 40px;
+	box-shadow: 5px 9px 24px rgba(242, 175, 1, 0.53);
+
+}
+
+.btn a:hover, .btn2 a:hover{
+	background: linear-gradient(102.56deg, #E63C27 32.88%, #C53220 65.54%);
+	box-shadow: 5px 9px 24px #D83824;
+}
+
+.btn p{
+	font-size: 17px;
+	width: 465px;
+	height: 42px;
+	text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+.block2 p{
+	width: 806px;
+	height: 156px;
+	line-height: 31px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container h2 {
+	font-size: 36px;
+	font-weight: 900;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.twocols{
+	display: flex;
+	justify-content: space-between;
+}
+
+.list1{
+	width: 460px;
+}
+
+.facility li, .howorder li{
+	display: flex;
+	align-items: center;
+	padding-bottom: 23px;
+}
+
+.facility li img, .howorder li img{
+	margin-right: 10px;
+}
+
+.howorder{
+	width: 826px;
+	margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+
+.btn2 {
+	text-align: center;
+}
+
+.btn2 p{
+	font-size: 17px;
+	height: 42px;
+	text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.25);
+	text-align: center;
+	padding-top: 9px;
+}
+
+.menu2 li a{
+	display: block;
+	height: 27px;
+	text-decoration: none;
+	font-size: 22px;
+	color: #FFE6A6; 
+	display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+padding-bottom: 7px;
+}
+
+.menu2 li{
+	margin-left: 48px;
+	padding-bottom: 7px;
+
+}
+
+.logo2{
+	margin-right: 258px;
+}
+.omag{
+	width: 134px;
+}

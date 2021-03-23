@@ -1,0 +1,141 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	font-size: 14px;
+	background-color: #F9F9F9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+p{
+	margin: 0;
+}
+
+/*__________ЗАГОЛОВОК_________*/
+
+.section{
+	width: 1070px;
+	margin: 0 auto; 
+}
+
+.path a{
+	display: inline-block;
+	text-decoration: none;
+	color: #646464;
+	margin-top: 23px;
+	margin-bottom: 23px;
+}
+
+h1{
+	font-size: 24px;
+	font-weight: normal;
+}
+
+/*__________ГАЛЕРЕЯ__________*/
+
+.gallery{
+	display: grid;
+	width: 43%;
+	grid-gap: 14px;
+	float: left;
+	margin-top: 24px;
+}
+
+.gallery img{
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+
+.big_pic {
+  width: 100%;
+  margin: auto;
+  background: silver;
+  overflow: hidden; /* clearfix */
+  grid-column: 1/5;
+}
+
+.big_pic:before {
+  content: "";
+  padding-top: 100%; /*квадратная галлерея*/
+  float: left;
+}
+
+/*__________ИНФО___________*/
+
+.info{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 54%;
+	float: left;
+	margin-top: 24px;
+	margin-left: 3%;
+}
+
+.general{
+	display: inline-block;
+	padding-right: 10%; 
+}
+
+.general p{
+	color: #646464;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.price{
+	margin-top: 73px;
+	margin-bottom: 21px;
+	font-size: 30px;
+}
+
+.buy-button{
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 24px;
+	color: #fff;
+	border-radius: 25px;
+	background: #FCB600;
+	padding: 10px 58px;
+	box-shadow: 7px 4px 20px rgba(252, 182, 0, 0.5);
+	margin-bottom: 11px;
+}
+
+.buy-button:hover{
+	background: #E63C27;
+	box-shadow: 7px 4px 24px #E63C27;
+}
+
+.delivery{
+	margin-left: 7%;
+}
+
+.delivery li{
+	display: flex;
+	align-items: center;
+	padding-bottom: 23px;
+	line-height: 170%;
+	letter-spacing: 0em;
+
+}
+
+.delivery li img{
+	margin-right: 11px;
+}
+
+.about{
+	grid-column: 1/3;
+}
+
