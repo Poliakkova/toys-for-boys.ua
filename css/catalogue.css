@@ -9,7 +9,7 @@ body{
 
 h1, h2, h3, h4, h5, h6 {
 	padding: 0;
-	margin: 0;
+	/*margin: 0;*/
 }
 
 ul, li {
@@ -22,147 +22,6 @@ ul, li {
 	width: 1070px; /*позиционирование по центру*/
 	margin: 0 auto; 
 }
-
-/*
-.contain {
-	padding-top: 15px;
-	padding-bottom: 3px;
-	width: 100%;
-	background: #280003;
-	margin: 0 auto; 
-}
-
-.contain2 {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 100%;
-	background: #C8DAEC;
-	margin: 100; 
-}
-
-
-/*_______________ВЕРХНЕЕ МЕНЮ______________
-
-.nav{
-	width: 1070px;
-	margin: 0 auto; 
-	display: flex; 
-	align-items: center; /*меню в одну строку
-}
-
-.logo{
-	margin-right: 317px;
-	width: 133px;
-	height: 78px;
-}
-
-.menu{
-	display: flex;
-	margin-left: auto;
-}
-
-.menu li a{
-	text-decoration: none;
-	color: #FFE6A6; 
-	display: inline-block;
-    line-height: 1;
-    font-size: 16px;
-
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-}
-
-.menu li a:after {
-	margin-top: 10px;
-	display: block;
-    content: "";
-    background-color: #FFE6A6;
-    opacity: .3;
-    height: 1px;
-    width: 0%;
-    left: 50%;
-    position: absolute;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.menu li a:hover:after,
-.menu li a:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью
-}
-
-.menu li{
-	margin-left: 68px;
-}
-
-/* _______________СТРОКА ПОИСКА_______________ 
-
-.search{
-	position: relative;
-	height: 32px;
-	width: 715px;
-	border-radius: 40px;
-	background: white;
-	padding-left: 34px;
-	margin-left: 23%;
-	color: black;
-	font-size: 16px;
-}
-
-.btn{
-	text-decoration: none;
-	font-size: 16px;
-	border: none;
-	color: black;
-	padding: 6px 33px;
-	border-radius: 40px;
-	background: #FCB600;
-	box-shadow: 7px 4px 20px rgba(252, 182, 0, 0.5);
-	float: right;
-}
-
-.btn:hover{
-	background: #E63C27;
-	box-shadow: 7px 4px 24px #E63C27;
-}
-
-.field{
-	border: none;
-	background: none;
-	outline: none;
-	float: left;
-	padding: 0;
-	color: black;
-	font-size: 16px;
-	transition: 0.4s;
-	line-height: 32px;
-	width: 540px;
-	font-family: 'Montserrat', sans-serif;
-}
-
-.pic2{
-	position:absolute;
-	right: 0px;
-	top: 0px;
-}
-
-.pic1{
-	position:absolute;
-	left: 0px;
-	top: 0px;
-}
-
-iframe{
-	width: 100%;
-	height: 152px;
-	margin: 0px;
-	border: 0;
-}*/
 
 /* _______________ПРАВАЯ ПАНЕЛЬ_______________ */
 
@@ -267,22 +126,23 @@ h1{
 	height: 162px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 15px;
+	padding-top: 15px;
+	overflow: hidden;
 }
 
 .picture img{
 	width: 100%;
 }
 
-h3{
+.name{
+	position: absolute;
 	display: block;
-	width: 162px;
-	height: 51px;
-	margin-top: 20px;
-	font-weight: 400;
-	font-size: 14px;
-	margin-right: auto;
-	margin-left: auto;
+	margin-left: 15px;
+	bottom: 7px;
+	z-index: 1;
+	margin-bottom: 72px;
+	height: 17%;
+	width: 84%;
 }
 
 .price{
@@ -291,6 +151,7 @@ h3{
 	margin-left: 15px;
 	bottom: 7px;
 	font-weight: 500;
+	z-index: 1;
 }
 
 .button{
@@ -303,10 +164,18 @@ h3{
 	background: #FCB600;
 	bottom: 13px;
 	right: 14px;
+	z-index: 3;
 }
 
 .button:hover{
 	background: #E63C27;
+}
+
+.cardlink{
+	display: block; /* Ссылка как блочный элемент */
+	position: relative;
+    height: 100%;
+    z-index: 2;
 }
 
 /*_______________ЛЕВАЯ ПАНЕЛЬ - фильтры_______________*/
