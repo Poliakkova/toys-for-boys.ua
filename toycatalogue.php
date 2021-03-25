@@ -33,7 +33,7 @@
 							<a href="shopabout.html" class="omag1">О магазине</a>
 						</li>
 						<li>
-							<a href="#">Инстаграмм</a>
+							<a href="https://instagram.com/toysforkids_kiev?igshid=1mqhtjbhmwr9m">Инстаграмм</a>
 						</li>
 					</ul>
 			</div>
@@ -183,14 +183,16 @@
 
 				while ($assort = mysqli_fetch_assoc($result)){
 					echo '
-						<div class="card">
+					<div class="card">
+					<a href="'.$assort["page"].'" class="cardlink">
 					<div class="picture">
 						<img src="img/toys/'.$assort['toypicture'].'" alt="avtomoika">
 					</div>
-					<h3>'.$assort["toyname"].'</h3>
+					</a>
+					<p class="name">'.$assort["toyname"].'</p>
 					<p class="price">'.$assort["toyprice"].' грн</p>
-					<a href="#" class="button">Купить</a>
-				</div>
+					<a href="'.$assort["page"].'" class="button">Купить</a>
+					</div>
 					';
 				}
 				?>
@@ -220,7 +222,7 @@
 						<a href="shopabout.html" class="omag">О магазине</a>
 					</li>
 					<li>
-						<a href="#">Инстаграмм</a>
+						<a href="https://instagram.com/toysforkids_kiev?igshid=1mqhtjbhmwr9m">Инстаграмм</a>
 					</li>
 				</ul>
 			</div>
