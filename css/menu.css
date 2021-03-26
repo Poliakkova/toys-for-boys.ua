@@ -37,7 +37,7 @@ ul, li {
 
 /*_______________ВЕРХНЕЕ МЕНЮ______________*/
 
-.nav{
+.nav, .nav2{
 	width: 1070px;
 	margin: 0 auto; 
 	display: flex; 
@@ -50,7 +50,7 @@ ul, li {
 	height: 78px;
 }
 
-.menu{
+.menu, .menu2{
 	display: flex;
 	margin-left: auto;
 }
@@ -99,7 +99,7 @@ ul, li {
 .search{
 	position: relative;
 	height: 32px;
-	width: 715px;
+	width: 65%;
 	border-radius: 40px;
 	background: white;
 	padding-left: 34px;
@@ -139,6 +139,10 @@ ul, li {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.poisk-text{
+	display: inline;
+}
+
 .pic2{
 	position:absolute;
 	right: 0px;
@@ -149,4 +153,269 @@ ul, li {
 	position:absolute;
 	left: 0px;
 	top: 0px;
+}
+
+/*_________МОБИЛЬНОЕ МЕНЮ_________*/
+
+.mobile-menu{
+	display: none;
+	background: #280003;
+}
+
+.small-nav{
+	display: flex;
+    padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.small-nav img{
+	width: 100%;
+}
+.open-button{
+	background: transparent;
+	border: none;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 8%;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.open-button:focus {
+	outline: none;
+}
+
+.small-nav a{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.inst-logo{
+	right: auto;
+	width: 8%;
+}
+.logoo{
+	width: 16%;
+	padding-left: 28%;
+	padding-right: 28%;
+}
+
+.line {
+	border-left: 1px solid #FFE6A6;
+	height: 31px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.header .show-menu{
+	display: block;
+	position: absolute;
+    background: #280003;
+	top: 7.4%;
+    width: 40%;
+    padding: 20px 10px 20px 10px;
+    z-index: 2;
+}
+
+
+/*_________ФУТЕР__________*/
+
+.menu2 li a{
+	display: block;
+	height: 27px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #FFE6A6; 
+	display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+	padding-bottom: 7px;
+}
+
+.menu2 li{
+	margin-left: 48px;
+	padding-bottom: 7px;
+}
+
+/*____________МЕДИА___________*/
+
+@media screen and (max-width: 1400px) {
+	.container {
+		width: 1070px;
+	}
+	.pic1, .pic2{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.container, .nav{
+		width: 960px;
+	}
+	.logo {
+    margin-right: 0;
+	}
+	.field {
+		width: 400px;
+	}
+	.search{
+		width: 57%;
+		margin-left: 28%;
+	}
+	.logo2 {
+		margin-right: 0;
+	}
+	.menu2 li a{
+		font-size: 16px;
+	}
+	.footer {
+		padding-top: 20px;
+	    padding-bottom: 0;
+	}
+
+
+}
+
+@media screen and (max-width: 991px) {
+	.container, .nav {
+		width: 720px;
+	}
+
+	.search{
+		width: 57%;
+		margin-left: 39%;
+	}
+	.field {
+	    width: 250px;
+	}
+	.menu li {
+	    margin-left: 48px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+		padding: 0;
+		margin: auto;
+	}
+	.contain{
+		padding: 0;
+	}
+	.hide {
+		display: none;
+	}
+	.logo{
+		display: none;
+	}
+	.mobile-menu {
+	    display: block;
+	}
+	.menu2{
+		display: block;
+		margin-right: auto;
+
+	}
+	.menu2 li a{
+		font-size: 14px;
+		height: 20px;
+		padding-bottom: 0;
+	}
+    .menu2 li{
+    	padding-bottom: 0;
+    	margin: 0;
+    	text-align: center;
+    }
+	.logo2 {
+		width: 80%;
+	}
+	.footer {
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	}
+	.menu {
+	    display: flex;
+	    flex-direction: column;
+	    margin-right: auto;
+	}
+	ul, li {
+    	margin: 10px;
+	}
+	.search {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.poisk-text {
+    display: none;
+}
+.btn{
+	    padding: 6px 15px;
+}
+.field {
+    width: 85%;
+}
+.nav {
+    width: 100%;
+}
+
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		width: 90%;
+	}
+	.header .show-menu{
+		top: 6.2%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	.header .show-menu{
+		top: 5%;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.inst-logo {
+   		 width: 14%;
+	}
+	.logoo {
+    	width: 26%;
+    }
+    .open-button {
+    	width: 14%;
+    	margin-left: 0px;
+	}
+	.small-nav a {
+    	margin-right: 0px;
+    }
+
+	.menu li a{
+		font-size: 14px;
+	}
+	.field {
+    width: 80%;
+	}
+	.menu li {
+    margin-left: 20px;
+}
+}
+
+@media screen and (max-width: 375px) {
+	.menu2 li a {
+    	font-size: 11px;
+	}
+	.logo2 {
+		width: 60%;
+	}
+	.header .show-menu{
+		top: 5%;
+	}
 }
