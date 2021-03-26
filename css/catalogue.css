@@ -23,6 +23,147 @@ ul, li {
 	margin: 0 auto; 
 }
 
+/*
+.contain {
+	padding-top: 15px;
+	padding-bottom: 3px;
+	width: 100%;
+	background: #280003;
+	margin: 0 auto; 
+}
+
+.contain2 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	background: #C8DAEC;
+	margin: 100; 
+}
+
+
+/*_______________ВЕРХНЕЕ МЕНЮ______________
+
+.nav{
+	width: 1070px;
+	margin: 0 auto; 
+	display: flex; 
+	align-items: center; /*меню в одну строку
+}
+
+.logo{
+	margin-right: 317px;
+	width: 133px;
+	height: 78px;
+}
+
+.menu{
+	display: flex;
+	margin-left: auto;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: #FFE6A6; 
+	display: inline-block;
+    line-height: 1;
+    font-size: 16px;
+
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu li a:after {
+	margin-top: 10px;
+	display: block;
+    content: "";
+    background-color: #FFE6A6;
+    opacity: .3;
+    height: 1px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.menu li a:hover:after,
+.menu li a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью
+}
+
+.menu li{
+	margin-left: 68px;
+}
+
+/* _______________СТРОКА ПОИСКА_______________ 
+
+.search{
+	position: relative;
+	height: 32px;
+	width: 715px;
+	border-radius: 40px;
+	background: white;
+	padding-left: 34px;
+	margin-left: 23%;
+	color: black;
+	font-size: 16px;
+}
+
+.btn{
+	text-decoration: none;
+	font-size: 16px;
+	border: none;
+	color: black;
+	padding: 6px 33px;
+	border-radius: 40px;
+	background: #FCB600;
+	box-shadow: 7px 4px 20px rgba(252, 182, 0, 0.5);
+	float: right;
+}
+
+.btn:hover{
+	background: #E63C27;
+	box-shadow: 7px 4px 24px #E63C27;
+}
+
+.field{
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: black;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 32px;
+	width: 540px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.pic2{
+	position:absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.pic1{
+	position:absolute;
+	left: 0px;
+	top: 0px;
+}
+
+iframe{
+	width: 100%;
+	height: 152px;
+	margin: 0px;
+	border: 0;
+}*/
+
 /* _______________ПРАВАЯ ПАНЕЛЬ_______________ */
 
 .right{
@@ -112,6 +253,8 @@ h1{
 	position: relative;
 	width: 192px;
 	height: 309px;
+	    margin-left: auto;
+    margin-right: auto;
 	background: #FFFFFF;
 	border: 1px solid #8C8C8C;
 	box-sizing: border-box;
@@ -175,6 +318,44 @@ h1{
 	display: block; /* Ссылка как блочный элемент */
 	position: relative;
     height: 100%;
+    z-index: 2;
+}
+
+.cart{
+	display: none;
+	width: 20px;
+}
+
+.hidden-filters{
+	display: none;
+}
+
+.filter-button {
+	cursor: pointer;
+    background: #fff;
+    border: 1px solid #8C8C8C;
+    border-radius: 6px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    font-family: inherit;
+    font-size: 14px;
+    width: 270px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    margin-top: 10px;
+    margin-bottom: -15px;
+}
+
+.filter-button:focus{
+	outline: none;
+}
+
+.filter .show-filter{
+	display: block;
+	position: absolute;
+    background: #280003;
+	top: 7.4%;
+    width: 40%;
+    padding: 20px 10px 20px 10px;
     z-index: 2;
 }
 
@@ -262,6 +443,7 @@ h1{
 	background-color: #280003;
 	padding-top: 35px;
 	padding-bottom: 25px;
+	margin-top: 50px;
 }
 
 .menu2{
@@ -312,6 +494,78 @@ padding-bottom: 7px;
 
 }
 
-.logo2{
-	margin-right: 258px;
+
+/*____________МЕДИА___________*/
+
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 1198px) {
+	.right {
+		margin-left: 28%;
+	}
+
+}
+
+@media screen and (max-width: 990px) {
+	.right {
+    margin-left: 39%;
+	}
+
+}
+
+@media screen and (max-width: 766px) {
+.left {
+    display: none;
+}
+.right {
+    margin-left: 0;
+}
+.select {
+	    right: auto;
+}
+.hidden-filters{
+	display: block;
+}
+.catalogue{
+	    margin-top: 120px;
+
+}
+}
+
+@media screen and (max-width: 575px) {
+
+}
+
+@media screen and (max-width: 430px) {
+	body{
+		font-size: 11px;
+	}
+	.name, .price{
+	    margin-left: 5%;
+}
+.button{
+	right: 5%;
+}
+.buy-text{
+	display: none;
+}
+.cart{
+	display: block;
+}
+.button {
+    padding: 8% 12%;
+}
+	.picture{
+		width: 90%;
+		height: auto;
+	}
+	.catalogue{
+		    grid-template-columns: repeat(auto-fit, minmax(50%, auto));
+	}
+	.card {
+    width: 90%;
+	}
+
 }
