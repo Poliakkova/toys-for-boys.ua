@@ -8,34 +8,49 @@
 	<title>Toys for Boys - каталог игрушек</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/catalogue.css">
+		<link rel="stylesheet" href="css/catalogue.css">
+
 	<link rel="stylesheet" href="css/menu.css">
 
 	<link rel="icon" type="image/png" href="img/minilogo.png">
 </head>
 <body>
-
+	<div class="mobile-menu">
+			<div class="container">
+				<div class="small-nav">
+				<button class="open-button">
+					<img src="img/hamburger.png" alt="Open menu">
+				</button>
+				<div class="line"></div>
+				<a href="index.html" class="logoo"><img src="img/logoo.svg" alt="Toys for boys" ></a>
+				<div class="line"></div>
+				<a href="https://instagram.com/toysforkids_kiev?igshid=1mqhtjbhmwr9m" class="inst-logo"><img src="img/instagramm.png" alt="Instagram"></a>
+			</div>
+		</div>
+		</div>
 	<!--<iframe src="menu.html"></iframe>-->
 	<header id="header" class="header">
 		<img src="img/picture1.png" alt="pic1" class="pic1">
 		<img src="img/picture2.png" alt="pic2" class="pic2">
 		<div class="contain">
-			<div class="nav">
+			<div class="container">
+			<div class="nav hide">
 				<a href="index.html"><img src="img/logo.svg" alt="Toys for boys" class="logo"></a>
-					<ul class="menu">
-						<li>
-							<a href="index.html">Главная</a>
-						</li>
-						<li>
-							<a href="toycatalogue.php">Игрушки</a>
-						</li>
-						<li>
-							<a href="shopabout.html" class="omag1">О магазине</a>
-						</li>
-						<li>
-							<a href="https://instagram.com/toysforkids_kiev?igshid=1mqhtjbhmwr9m">Инстаграмм</a>
-						</li>
-					</ul>
+				<ul class="menu">
+					<li>
+						<a href="index.html">Главная</a>
+					</li>
+					<li>
+						<a href="toycatalogue.php">Игрушки</a>
+					</li>
+					<li>
+						<a href="shopabout.html" class="omag1">О магазине</a>
+					</li>
+					<li>
+						<a href="https://instagram.com/toysforkids_kiev?igshid=1mqhtjbhmwr9m">Инстаграмм</a>
+					</li>
+				</ul>
+			</div>
 			</div>
 		</div>
 		<div class="contain2">
@@ -43,16 +58,23 @@
 			<div id="search" class="search">
 				<!--<form action="" method="post">-->
 				<input class="field" type="search" name="poisk" placeholder="Введите название...">
-				<input type = "submit" class="btn" value="Поиск">
-				</input>
-				<img src="img/loupe.svg" alt="loupe" class="loupe">	
-
+				<!--<a type = "submit" class="btn" value="Поиск">-->
+				<a href="#" class="btn"><img src="img/loupe.svg" alt="loupe" class="loupe"><div class="poisk-text"> Поиск</div></a>
+				
 				<!--</form>-->
 				<div class="output"></div>
 			</div>
 			</div>
 		</div>
 	</header>
+
+	<script>
+		$(function () {
+	$('.filter-button').click(function () {
+		$('.filter').toggleClass('show-filter')
+	})
+});
+	</script>
 
 	<div class="container">
 		<div class="left">
@@ -166,6 +188,11 @@
 				 товаров<br>
 			</div>
 			<hr>
+
+			<div class="hidden-filters">
+				<button class="filter-button">Фильтры</button>
+			</div>
+
 			<div class="select">
 				<select class="select">
 					<option>Цена по возрастанию</option>
@@ -191,18 +218,11 @@
 					</a>
 					<p class="name">'.$assort["toyname"].'</p>
 					<p class="price">'.$assort["toyprice"].' грн</p>
-					<a href="'.$assort["page"].'" class="button">Купить</a>
+					<a href="'.$assort["page"].'" class="button"><img src="img/cart.svg" alt="Корзина" class="cart"><span class="buy-text">Купить</span></a>
 					</div>
 					';
 				}
 				?>
-			</div>
-			<div class="pages">
-				<ul>
-					<li><a href="#"></a>1</li>
-					<li><a href="#"></a>2</li>
-					<li><a href="#"></a>3</li>
-				</ul>
 			</div>
 		</div>
 	</div>
@@ -229,8 +249,7 @@
 		</div>
 	</footer>
 
-	<script src="script.js"></script>
-	<script src="Products/Products.js"></script>
-	<link rel="stylesheet" href="Products/Products.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
