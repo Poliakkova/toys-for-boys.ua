@@ -57,10 +57,6 @@ ul, li {
 
 }
 
-.logo{
-	margin-right: 296px;
-}
-
 .menu, .menu2{
 	display: flex;
 	margin-left: auto;
@@ -109,14 +105,14 @@ ul, li {
 	width: 109px;
 }
 
-.nav{
+.nav, .nav2{
 	display: flex; 
 	align-items: center; /*меню в одну строку*/
 }
 
 .offer {
-	margin-top: 117px;
-	width: 600px;
+	margin-top: 10%;
+    width: 50%;
 	height: 407px;
 }
 
@@ -130,11 +126,13 @@ ul, li {
 	font-size: 24px;
 	text-shadow: 7px 7px 13px rgba(0, 0, 0, 0.5);
 }
+ 
+/* _______СТАТИЧЕСКАЯ КНОПКА НА ИНСТУ_______ */
 
 .insta {
     position: fixed; /* Фиксированное положение */
     right: 175px; /* Расстояние от правого края окна браузера */
-    top: 790px; /* Расстояние сверху */
+    top: 70%; /* Расстояние сверху */
     padding: 10px; /* Поля вокруг текста */ 
    }
 
@@ -174,7 +172,6 @@ ul, li {
 	padding: 18px 50px;
 	border-radius: 40px;
 	box-shadow: 5px 9px 24px rgba(242, 175, 1, 0.53);
-
 }
 
 .btn a:hover, .btn2 a:hover{
@@ -190,7 +187,7 @@ ul, li {
 }
 
 .block2 p{
-	width: 806px;
+	width: 80%;
 	height: 156px;
 	line-height: 31px;
 	text-align: center;
@@ -243,6 +240,8 @@ ul, li {
 	padding-top: 9px;
 }
 
+/*_________ФУТЕР__________*/
+
 .menu2 li a{
 	display: block;
 	height: 27px;
@@ -262,10 +261,306 @@ padding-bottom: 7px;
 	padding-bottom: 7px;
 
 }
-
+/*
 .logo2{
 	margin-right: 258px;
+}*/
+
+/*_________МОБИЛЬНОЕ МЕНЮ_________*/
+
+.mobile-menu{
+	display: none;
+	background: #280003;
 }
-.omag{
-	width: 134px;
+
+.small-nav{
+	display: flex;
+    padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.small-nav img{
+	width: 100%;
+}
+.open-button{
+	background: transparent;
+	border: none;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 8%;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.open-button:focus {
+	outline: none;
+}
+
+.small-nav a{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.inst-logo{
+	right: auto;
+	width: 8%;
+}
+.logoo{
+	width: 16%;
+	padding-left: 28%;
+	padding-right: 28%;
+}
+
+.line {
+	border-left: 1px solid #FFE6A6;
+	height: 31px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.header .show-menu{
+	display: block;
+	position: absolute;
+    background: rgba(0,0,0,0.4);
+	top: 7.4%;
+    width: 40%;
+    padding: 20px 10px 20px 10px;
+}
+
+
+
+/*___________МЕДИА__________*/
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 1040px;
+	}
+
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 960px;
+	}
+	.offer p{
+		margin-top: 10px;
+    	margin-bottom: 10px;
+	}
+	.btn {
+    	margin-top: 47px;
+	}
+	.btn p{
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
+	.menu li {
+    	margin-left: 30px;
+	}
+	.block2{
+		height: 100%;
+	}
+	.block2 p{
+		height: 100%;
+	}
+	.howorder{
+		width: 90%;
+	}
+	.menu2 li{
+		margin-left: 28px;
+	}
+	.insta{
+		right: 15%;
+    	top: 80%;
+	}
+	.header{
+		   height: 750px;
+	}
+	.offer {
+    	margin-top: 20%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+		padding: 0;
+		margin: auto;
+	}
+	.nav {
+		display: none;
+	}
+	.logo{
+		display: none;
+	}
+	.mobile-menu {
+	    display: block;
+	}
+	.offer{
+	    width: 90%;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.btn {
+    	margin-top: 77px;
+    	text-align: center;
+	}
+	.offer p {
+    	font-size: 18px;
+    	line-height: 150%;
+	}
+	.offer h1 {
+    	font-size: 36px;
+	}
+	.offer {
+    	margin-top: 40%;
+	}
+	.insta img {
+    	width: 120px;
+	}
+	.menu2{
+		display: block;
+		margin-right: auto;
+
+	}
+	.menu2 li a{
+		font-size: 14px;
+		height: 20px;
+		padding-bottom: 0;
+	}
+    .menu2 li{
+    	padding-bottom: 0;
+    	margin: 0;
+    	text-align: center;
+    }
+    .twocols{
+    	display: block;
+    }
+    .list1{
+    	width: 100%;
+    }
+    .btn2 p, .btn p {
+	    font-size: 12px;
+	    width: 60%;
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+	.logo2 {
+		width: 80%;
+	}
+	.insta{
+		right: 17%;
+	}
+	.footer {
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	}
+	.menu {
+	    display: flex;
+	    flex-direction: column;
+	    margin-right: auto;
+	}
+	ul, li {
+    	margin: 10px;
+	}
+
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		width: 90%;
+	}
+	.container h2 {
+    	font-size: 24px;
+	}
+	body{
+		font-size: 14px;
+	}
+	.facility li{
+		padding-bottom: 5px;
+	}
+	.header .show-menu{
+		top: 6.5%;
+		padding: 0;
+	}	
+}
+
+@media screen and (max-width: 425px) {
+	.insta img {
+    	width: 100px;
+	}
+	.inst-logo {
+   		 width: 14%;
+	}
+	.logoo {
+    	width: 26%;
+    }
+    .open-button {
+    	width: 14%;
+    	margin-left: 0px;
+	}
+	.small-nav a {
+    	margin-right: 0px;
+    }
+    .btn a, .btn2 a {
+    	font-size: 18px;
+    }
+    .header{
+    	padding-bottom: 0;
+    	height: 650px;
+    }
+    .header .show-menu{
+		top: 6%;
+	}
+	.menu li a{
+		font-size: 14px;
+	}
+	.block4 {
+    padding-bottom: 30px;
+}
+.howorder {
+
+    padding-bottom: 30px;
+}
+
+}
+
+@media screen and (max-width: 375px) {
+	.insta{
+		right: 20%;
+	}
+	body {
+    	font-size: 12px;
+	}
+	.container h2 {
+    	font-size: 18px;
+	}
+	.menu2 li a {
+    	font-size: 11px;
+	}
+	.logo2 {
+		width: 60%;
+	}
+	.offer p {
+    	font-size: 15px;
+	}
+	.btn2 p, .btn p {
+	    font-size: 11px;
+	    width: 80%;
+	}
+	.offer h1 {
+    	font-size: 30px;
+	}
+	.header {
+    	padding-bottom: 0;
+    	height: 550px;
+	}
+	.header .show-menu{
+		top: 5%;
+	}
 }
