@@ -15,20 +15,25 @@
 	<link rel="icon" type="image/png" href="img/minilogo.png">
 </head>
 <body>
+	<a name="top"></a>
+	<a class="top" href="#top"><img src="img/to-top.svg" alt="Наверх"></a>
+	
 	<div class="mobile-menu">
-			<div class="container">
-				<div class="small-nav">
+		<div class="container">
+			<div class="small-nav">
+				<div style="display: inherit;">
 				<button class="open-button">
 					<img src="img/hamburger.png" alt="Open menu">
 				</button>
+				<div class="line"></div></div>
+				<a href="index.html"><img class="logoo" src="img/logoo.svg" alt="Toys for boys" ></a>
+				<div style="display: inherit;">
 				<div class="line"></div>
-				<a href="index.html" class="logoo"><img src="img/logoo.svg" alt="Toys for boys" ></a>
-				<div class="line"></div>
-				<a href="https://instagram.com/toysforkids_kiev?igshid=1mqhtjbhmwr9m" class="inst-logo"><img src="img/instagramm.png" alt="Instagram"></a>
+				<a href="https://instagram.com/toysforkids_kiev?igshid=1mqhtjbhmwr9m" class="inst-logo"><img src="img/instagramm.png" alt="Instagram"></a></div>
 			</div>
 		</div>
-		</div>
-	<!--<iframe src="menu.html"></iframe>-->
+	</div>
+
 	<header id="header" class="header">
 		<img src="img/picture1.png" alt="pic1" class="pic1">
 		<img src="img/picture2.png" alt="pic2" class="pic2">
@@ -44,7 +49,7 @@
 						<a href="toycatalogue.php">Игрушки</a>
 					</li>
 					<li>
-						<a href="shopabout.html" class="omag1">О магазине</a>
+						<a href="shopabout.html">О магазине</a>
 					</li>
 					<li>
 						<a href="https://instagram.com/toysforkids_kiev?igshid=1mqhtjbhmwr9m">Инстаграмм</a>
@@ -53,6 +58,7 @@
 			</div>
 			</div>
 		</div>
+
 		<div class="contain2">
 			<div class="container">
 			<div id="search" class="search">
@@ -239,7 +245,7 @@
 						<a href="toycatalogue.php">Игрушки</a>
 					</li>
 					<li>
-						<a href="shopabout.html" class="omag">О магазине</a>
+						<a href="shopabout.html">О магазине</a>
 					</li>
 					<li>
 						<a href="https://instagram.com/toysforkids_kiev?igshid=1mqhtjbhmwr9m">Инстаграмм</a>
