@@ -1,0 +1,157 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	font-size: 16px;
+	background-color: #F9F9F9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	width: 1070px;
+	margin: 0 auto;
+}
+
+.back-pic {
+	position: absolute;
+	z-index: 1;
+	top:500px;
+	left: -200px;
+}
+
+.flex{
+	display: flex;
+}
+
+/*_______ПУТЬ_______*/
+
+
+.path{	
+	margin-top: 23px;
+	margin-bottom: 23px;
+}
+
+.path a{
+	text-decoration: none;
+	color: #646464;
+}
+
+/*_______ЛЕВАЯ ПАНЕЛЬ_______*/
+
+.left{
+	width: 20%;
+	margin-right: auto;
+}
+
+.page-nav{
+	background: #FFFFFF;
+	border: 1px solid #8C8C8C;
+	box-sizing: border-box;
+	border-radius: 6px;
+	padding-bottom: 11px;
+	padding-top: 11px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+h1{
+	font-weight: 500;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 14px;
+}
+
+.page-links li{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.page-links li a{
+	font-size: 13px;
+	text-decoration: none;
+	color: black;
+}
+
+.page-links li a:hover{
+	font-weight: 500;
+	color: #E56353;
+}
+
+/*_______ПРАВАЯ ПАНЕЛЬ_______*/
+
+.right{
+	width: 78%;
+    margin-left: auto;
+    text-shadow: 4px 4px 7px rgb(0 0 0 / 25%);
+    z-index: 20;
+}
+
+.main-picture{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.right p{
+	margin-block-start: 2em;
+    margin-block-end: 2em;
+}
+
+.right a h2{
+	font-weight: 500;
+	font-size: inherit;
+}
+
+/*_______ФУТЕР_______*/
+
+.footer{
+	margin-top: 50px;
+}
+
+/*_________МЕДИА________*/
+
+@media screen and (max-width: 1024px) {
+	.back-pic{
+		width: 600px;
+		left: -100px;
+		top: 700px;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	body{
+		font-size: 14px;
+	}
+	.left{
+		display: none;
+	}
+	.right{
+		width: 100%;
+	}
+	.back-pic{
+		width: 400px;
+		left: -100px;
+		top: 700px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.back-pic{
+		width: 300px;
+		left: -100px;
+		top: 900px;
+	}
+	body{
+		font-size: 13px;
+	}
+}
