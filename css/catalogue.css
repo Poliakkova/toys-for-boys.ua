@@ -23,146 +23,6 @@ ul, li {
 	margin: 0 auto; 
 }
 
-/*
-.contain {
-	padding-top: 15px;
-	padding-bottom: 3px;
-	width: 100%;
-	background: #280003;
-	margin: 0 auto; 
-}
-
-.contain2 {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 100%;
-	background: #C8DAEC;
-	margin: 100; 
-}
-
-
-/*_______________ВЕРХНЕЕ МЕНЮ______________
-
-.nav{
-	width: 1070px;
-	margin: 0 auto; 
-	display: flex; 
-	align-items: center; /*меню в одну строку
-}
-
-.logo{
-	margin-right: 317px;
-	width: 133px;
-	height: 78px;
-}
-
-.menu{
-	display: flex;
-	margin-left: auto;
-}
-
-.menu li a{
-	text-decoration: none;
-	color: #FFE6A6; 
-	display: inline-block;
-    line-height: 1;
-    font-size: 16px;
-
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-}
-
-.menu li a:after {
-	margin-top: 10px;
-	display: block;
-    content: "";
-    background-color: #FFE6A6;
-    opacity: .3;
-    height: 1px;
-    width: 0%;
-    left: 50%;
-    position: absolute;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.menu li a:hover:after,
-.menu li a:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью
-}
-
-.menu li{
-	margin-left: 68px;
-}
-
-/* _______________СТРОКА ПОИСКА_______________ 
-
-.search{
-	position: relative;
-	height: 32px;
-	width: 715px;
-	border-radius: 40px;
-	background: white;
-	padding-left: 34px;
-	margin-left: 23%;
-	color: black;
-	font-size: 16px;
-}
-
-.btn{
-	text-decoration: none;
-	font-size: 16px;
-	border: none;
-	color: black;
-	padding: 6px 33px;
-	border-radius: 40px;
-	background: #FCB600;
-	box-shadow: 7px 4px 20px rgba(252, 182, 0, 0.5);
-	float: right;
-}
-
-.btn:hover{
-	background: #E63C27;
-	box-shadow: 7px 4px 24px #E63C27;
-}
-
-.field{
-	border: none;
-	background: none;
-	outline: none;
-	float: left;
-	padding: 0;
-	color: black;
-	font-size: 16px;
-	transition: 0.4s;
-	line-height: 32px;
-	width: 540px;
-	font-family: 'Montserrat', sans-serif;
-}
-
-.pic2{
-	position:absolute;
-	right: 0px;
-	top: 0px;
-}
-
-.pic1{
-	position:absolute;
-	left: 0px;
-	top: 0px;
-}
-
-iframe{
-	width: 100%;
-	height: 152px;
-	margin: 0px;
-	border: 0;
-}*/
 
 /* _______________ПРАВАЯ ПАНЕЛЬ_______________ */
 
@@ -253,7 +113,7 @@ h1{
 	position: relative;
 	width: 192px;
 	height: 309px;
-	    margin-left: auto;
+	margin-left: auto;
     margin-right: auto;
 	background: #FFFFFF;
 	border: 1px solid #8C8C8C;
@@ -440,60 +300,8 @@ h1{
 /* _______________ФУТЕР_______________ */
 
 .footer{
-	background-color: #280003;
-	padding-top: 35px;
-	padding-bottom: 25px;
 	margin-top: 50px;
 }
-
-.menu2{
-	display: flex;
-	margin-left: auto;
-}
-
-.menu2 li a:after {
-	margin-top: 10px;
-	display: block;
-    content: "";
-    background-color: #FFE6A6;
-    opacity: .3;
-    height: 1px;
-    width: 0%;
-    left: 50%;
-    position: absolute;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.menu2 li a:hover:after,
-.menu2 li a:focus:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-}
-
-.menu2 li a{
-	display: block;
-	height: 27px;
-	text-decoration: none;
-	font-size: 20px;
-	color: #FFE6A6; 
-	display: inline-block;
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-padding-bottom: 7px;
-}
-
-.menu2 li{
-	margin-left: 48px;
-	padding-bottom: 7px;
-
-}
-
 
 /*____________МЕДИА___________*/
 
@@ -515,57 +323,48 @@ padding-bottom: 7px;
 
 }
 
-@media screen and (max-width: 766px) {
-.left {
-    display: none;
-}
-.right {
-    margin-left: 0;
-}
-.select {
-	    right: auto;
-}
-.hidden-filters{
-	display: block;
-}
-.catalogue{
-	    margin-top: 120px;
-
-}
-}
-
-@media screen and (max-width: 575px) {
-
+@media screen and (max-width: 769px) {
+	.left {
+	    display: none;
+	}
+	.right {
+	    margin-left: 0;
+	}
+	.select {
+		    right: auto;
+	}
+	.hidden-filters{
+		display: block;
+	}
+	.catalogue{
+		margin-top: 120px;
+	}
 }
 
 @media screen and (max-width: 430px) {
 	body{
-		font-size: 11px;
+		font-size: 14px;
 	}
 	.name, .price{
 	    margin-left: 5%;
-}
-.button{
-	right: 5%;
-}
-.buy-text{
-	display: none;
-}
-.cart{
-	display: block;
-}
-.button {
-    padding: 8% 12%;
-}
+	}
+	.button{
+		right: 5%;
+		padding: 8% 12%;
+	}
+	.buy-text{
+		display: none;
+	}
+	.cart{
+		display: block;
+	}
 	.picture{
 		width: 90%;
-		height: auto;
 	}
 	.catalogue{
-		    grid-template-columns: repeat(auto-fit, minmax(50%, auto));
+		grid-template-columns: repeat(auto-fit, minmax(50%, auto));
 	}
 	.card {
-    width: 90%;
+    	width: 96%;
 	}
-
 }
