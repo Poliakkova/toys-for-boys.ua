@@ -23,7 +23,7 @@ ul, li {
 	position: fixed;
 	z-index: 100;
 	left: 5%;
-	top:80%;
+	top:74%;
 }
 
 .top img{
@@ -351,7 +351,7 @@ ul, li {
     	margin-bottom: 10px;
 	}
 	.btn {
-    	margin-top: 47px;
+    		margin-top: 47px;
 	}
 	.btn p{
 		margin-top: 20px;
@@ -363,7 +363,7 @@ ul, li {
 		width: 720px;
 	}
 	.menu li {
-    	margin-left: 30px;
+    		margin-left: 30px;
 	}
 	.block2{
 		height: 100%;
@@ -385,7 +385,10 @@ ul, li {
 		   height: 750px;
 	}
 	.offer {
-    	margin-top: 20%;
+    		margin-top: 20%;
+	}
+	.top{
+		top:83%;
 	}
 }
 
@@ -532,9 +535,7 @@ ul, li {
 	.top img{
 		width: 100%;
 	}
-	.top{
-		top:83%;
-	}
+	
 
 }
 
