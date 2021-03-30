@@ -8,12 +8,11 @@
 	<title>Toys for Boys - каталог игрушек</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/catalogue.css">
-
+	<link rel="stylesheet" href="css/catalogue.css">
 	<link rel="stylesheet" href="css/menu.css">
-
 	<link rel="icon" type="image/png" href="img/minilogo.png">
 </head>
+
 <body>
 	<a name="top"></a>
 	<a class="top" href="#top"><img src="img/to-top.svg" alt="Наверх"></a>
@@ -74,17 +73,13 @@
 		</div>
 	</header>
 
-	<script>
-		$(function () {
-	$('.filter-button').click(function () {
-		$('.filter').toggleClass('show-filter')
-	})
-});
-	</script>
+	
 
 	<div class="container">
 		<div class="left">
+			<div class="overlay"></div>
 			<div class="filter">
+				<a href="#" class="cross"><span class="lines"></span></a>
 				<p>Категории</p>
 				<div class="checkbox">
 					<input class="input" type="checkbox" id = cbid>
@@ -170,10 +165,9 @@
 					<input class="input" type="checkbox" id = cbid19>
 					<label class="label" for="cbid19">10+</label>
 				</div>
-
-
 			</div>
 		</div>
+
 		<div class="right">
 			<div class="path">
 				<a href="index.html">Главная</a> > <a href="catalogue.html">Игрушки</a>
@@ -197,6 +191,7 @@
 
 			<div class="hidden-filters">
 				<button class="filter-button">Фильтры</button>
+
 			</div>
 
 			<div class="select">
