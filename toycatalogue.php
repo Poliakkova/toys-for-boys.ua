@@ -1,4 +1,15 @@
 
+<?php 
+include 'functions.php';
+$induction = connect_db();
+
+if( $_POST["poisk"]) {
+$goods = get_goods($induction, $_POST["poisk"]);
+} else {
+	$goods = get_goods($induction);
+}
+ ?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -61,12 +72,12 @@
 		<div class="contain2">
 			<div class="container">
 			<div id="search" class="search">
-				<!--<form action="" method="post">-->
+
+				<form name="search-form" action="?php $_PHP_SELF ?" method="post">
+
 				<input class="field" type="search" name="poisk" placeholder="Введите название...">
-				<!--<a type = "submit" class="btn" value="Поиск">-->
-				<a href="#" class="btn"><img src="img/loupe.svg" alt="loupe" class="loupe"><div class="poisk-text"> Поиск</div></a>
-				
-				<!--</form>-->
+				<button type = "submit" class="btn" value="Поиск"><img src="img/loupe.svg" alt="loupe" class="loupe"><div class="poisk-text"> Поиск</div></button>
+				</form>
 				<div class="output"></div>
 			</div>
 			</div>
@@ -82,7 +93,7 @@
 				<a href="#" class="cross"><span class="lines"></span></a>
 				<p>Категории</p>
 				<div class="checkbox">
-					<input class="input" type="checkbox" id = cbid>
+					<input class="input" type="checkbox" id = cbid checked>
 					<label class="label" for="cbid">Все</label>
 				</div>
 				<div class="checkbox">
@@ -176,14 +187,11 @@
 				<h1>Все игрушки</h1>
 				Найдено 
 				<?php 
-				include "database.php";
-				include "search.php";
-				$query = <<<EOD
-				select count(*) from `assort` where toyname like '%$var%'
-				EOD;
-				$result = mysqli_query($induction, $query);
-				$assort = mysqli_fetch_array($result);
-				echo $assort[0];
+				if (empty($goods)){
+					echo "0";
+				} else {
+					echo count($goods);
+				}
 				 ?>
 				 товаров<br>
 			</div>
@@ -191,27 +199,27 @@
 
 			<div class="hidden-filters">
 				<button class="filter-button">Фильтры</button>
-
 			</div>
 
 			<div class="select">
-				<select class="select">
-					<option>Цена по возрастанию</option>
-					<option>Цена по убыванию</option>
+				<select class="select-inner" onchange="sort(this)">
+					<option value="nothing">Не выбрано</option>
+					<option value="increase">Цена по возрастанию</option>
+					<option value="decrease">Цена по убыванию</option>
 				</select>
 			</div>
-			<div class="catalogue">
+
+			<div class="catalogue" id="catalogue">
 
 				<?php 
-				include "database.php";
-				/*include "search.php";*/
-				$inputval = $_REQUEST['poisk'];
-				$query = "select * from `assort` where toyname like '%$inputval%'"; 
-				$result = mysqli_query($induction, $query);
+				//include "search.php";
+				if (empty($goods)){
+					echo "Ничего не найдено.";
+				}
 
-				while ($assort = mysqli_fetch_assoc($result)){
+				foreach ($goods as $assort) : 
 					echo '
-					<div class="card">
+					<div class="card" data-price="'.$assort["toyprice"].'" data-name="'.$assort["toyname"].'" data-id="'.$assort["toy_id"].'">
 					<a href="'.$assort["page"].'" class="cardlink">
 					<div class="picture">
 						<img src="img/toys/'.$assort['toypicture'].'" alt="avtomoika">
@@ -222,7 +230,7 @@
 					<a href="'.$assort["page"].'" class="button"><img src="img/cart.svg" alt="Корзина" class="cart"><span class="buy-text">Купить</span></a>
 					</div>
 					';
-				}
+				endforeach;
 				?>
 			</div>
 		</div>
@@ -252,5 +260,6 @@
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/sort.js"></script>
 </body>
 </html>
