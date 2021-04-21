@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Shop;
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Shop;
+use Illuminate\Support\Facades\DB;
 
 class SomeController extends Controller
 {
     public function showcatalogue() {
-        $assort = App\Shop::all();
+        $assort = DB::table('assort')->get();
         return view('catalogue', compact('assort'));
     }
 
@@ -22,7 +22,14 @@ class SomeController extends Controller
         return view('index');
     }
 
+    public function showataka() {
+        $assort = DB::table('assort')->where('toy_id', '=', '1004')->get();
+        return view('pages/ataka-dracona', compact('assort'));
+    }
+
     public function search() {
-        request('poisk');
+        $var = Request('poisk');
+        $assort = DB::table('assort')->where('toyname', 'like', '%'.$var.'%')->get();
+        return view('catalogue', compact('assort'));
     }
 }
