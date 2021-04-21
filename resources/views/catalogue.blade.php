@@ -5,20 +5,6 @@
     <link rel="stylesheet" href="{{ asset('../css/catalogue.css') }}">
     <script src="{{ asset('../js/sort.js') }}"></script>
 
-
-    <!--    --><?php
-//    include 'functions.php';
-//    $induction = connect_db();
-//
-//    if( $_POST["poisk"]) {
-//        $poisk = strip_tags($_POST["poisk"]);
-//        $poisk = addslashes($poisk);
-//        $goods = get_goods($induction, $poisk);
-//    } else {
-//        $goods = get_goods($induction);
-//    }
-//    ?>
-
     <div class="container">
         <div class="left">
             <div class="overlay"></div>
