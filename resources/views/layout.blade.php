@@ -55,7 +55,8 @@
     <div class="contain2">
         <div class="container">
             <div id="search" class="search">
-                <form name="search-form" action="toycatalogue.php" method="post">
+                <form name="search-form" action="catalogue" method="post">
+                @csrf
                     <input class="field" type="search" name="poisk" placeholder="Введите название...">
                     <button type = "submit" class="btn" value="Поиск"><img src="img/loupe.svg" alt="loupe" class="loupe"><div class="poisk-text"> Поиск</div></button>
                 </form>
