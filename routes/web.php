@@ -14,34 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/about', 'App\Http\Controllers\SomeController@showabout');
 Route::get('/', 'App\Http\Controllers\SomeController@showindex');
+Route::get('/catalogue', 'App\Http\Controllers\SomeController@showcatalogue');
+Route::get('/ataka-dracona', 'App\Http\Controllers\SomeController@showataka');
 
-//Route::get('/catalogue', 'App\Http\Controllers\SomeController@showcatalogue');
-
-Route::get('/catalogue', function () {
-    $assort = DB::table('assort')->get();
-    return view('catalogue', compact('assort'));
-});
 
 Route::post('/catalogue', 'App\Http\Controllers\SomeController@search');
-
-Route::get('/toypage', function () {
-    $assort = DB::table('assort')->get();
-    return view('toypage', compact('assort'));
-});
-
-
-//Route::get('/about', function () {
-//    return view('about');
-//});
-
-//Route::get('/toypage/{page}', function ($page) {
-//    $toy = DB::table('assort')->find($page);
-//    dd($toy);
-//    return view('toypage', compact('assort'));
-//});
-
-//Route::get('/pages/'{$page}'.php', SomeController@get() {
-//    return view('about');
-//});
-
-
